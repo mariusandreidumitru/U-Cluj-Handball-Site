@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasament Complet | U Cluj Handbal</title>
+    
+    <!-- Fonturi și Framework-uri externe -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS-ul nostru separat -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Bara de navigare -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-shield-halved me-2"></i>U CLUJ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                    <li class="nav-item"><a class="nav-link" href="stiri.html">Știri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meciuri.html">Meciuri</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold text-white" href="clasament.html">Clasament</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lot.html">Lot Echipa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bilete.html"><i class="fa-solid fa-ticket me-1"></i> Bilete</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Antetul Paginii -->
+    <header class="page-header">
+        <div class="container" data-aos="zoom-in">
+            <h1 class="page-title display-4">Clasament Complet</h1>
+            <p class="lead opacity-75">Sezonul 2025 - 2026</p>
+        </div>
+    </header>
+
+    <!-- Secțiunea Clasament -->
+    <section class="container my-5" style="margin-top: -40px !important; position: relative; z-index: 10;">
+        
+        <!-- Butoane Tab -->
+        <div class="text-center mb-5" data-aos="fade-up">
+            <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#masculin">MASCULIN</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#feminin">FEMININ</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up">
+            <div class="col-lg-10">
+                <div class="tab-content" id="pills-tabContent">
+                    
+                    <!-- Clasament Masculin -->
+                    <div class="tab-pane fade show active" id="masculin">
+                        <div class="standings-container">
+                            <h4 class="fw-bold mb-4 text-center">Liga națională</h4>
+                            <div class="table-responsive">
+                                <table class="table align-middle text-center">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-start" style="width: 50px;">Poz</th>
+                                            <th scope="col" class="text-start">Echipă</th>
+                                            <th scope="col" class="d-none d-md-table-cell">Meciuri</th>
+                                            <th scope="col" class="d-none d-md-table-cell">Victorii</th>
+                                            <th scope="col" class="d-none d-md-table-cell">Egaluri</th>
+                                            <th scope="col" class="d-none d-md-table-cell">Înfrângeri</th>
+                                            <th scope="col" class="text-end">Puncte</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">1.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/dinamo_bucuresti.png" class="team-logo rounded-circle" alt="Dinamo">
+                                                    <span class="team-name">Dinamo București</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">17</td>
+                                            <td class="d-none d-md-table-cell stat-col">14</td>
+                                            <td class="d-none d-md-table-cell stat-col">0</td>
+                                            <td class="d-none d-md-table-cell stat-col">3</td>
+                                            <td class="text-end points-col">28</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">2.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/SCM_Politehnica_Timișoara.png" class="team-logo rounded-circle" alt="Poli">
+                                                    <span class="team-name">SCM Politehnica</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">17</td>
+                                            <td class="d-none d-md-table-cell stat-col">10</td>
+                                            <td class="d-none d-md-table-cell stat-col">2</td>
+                                            <td class="d-none d-md-table-cell stat-col">5</td>
+                                            <td class="text-end points-col">22</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">3.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/buzau.png" class="team-logo rounded-circle" alt="Buzau">
+                                                    <span class="team-name">Buzău</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">16</td>
+                                            <td class="d-none d-md-table-cell stat-col">10</td>
+                                            <td class="d-none d-md-table-cell stat-col">2</td>
+                                            <td class="d-none d-md-table-cell stat-col">4</td>
+                                            <td class="text-end points-col">22</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">4.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/CSM_București.png" class="team-logo rounded-circle" alt="CSM Buc">
+                                                    <span class="team-name">CSM București</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">17</td>
+                                            <td class="d-none d-md-table-cell stat-col">10</td>
+                                            <td class="d-none d-md-table-cell stat-col">1</td>
+                                            <td class="d-none d-md-table-cell stat-col">6</td>
+                                            <td class="text-end points-col">21</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">5.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/CSMVS.png" class="team-logo rounded-circle" alt="Vaslui">
+                                                    <span class="team-name">CSM Vaslui</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">17</td>
+                                            <td class="d-none d-md-table-cell stat-col">9</td>
+                                            <td class="d-none d-md-table-cell stat-col">3</td>
+                                            <td class="d-none d-md-table-cell stat-col">5</td>
+                                            <td class="text-end points-col">21</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">6.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/potaissa_turda.png" class="team-logo rounded-circle" alt="Turda">
+                                                    <span class="team-name">Potaissa Turda</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">17</td>
+                                            <td class="d-none d-md-table-cell stat-col">9</td>
+                                            <td class="d-none d-md-table-cell stat-col">2</td>
+                                            <td class="d-none d-md-table-cell stat-col">6</td>
+                                            <td class="text-end points-col">20</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">7.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/minaur_baia_mare.png" class="team-logo rounded-circle" alt="Minaur">
+                                                    <span class="team-name">Minaur Baia Mare</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">16</td>
+                                            <td class="d-none d-md-table-cell stat-col">8</td>
+                                            <td class="d-none d-md-table-cell stat-col">4</td>
+                                            <td class="d-none d-md-table-cell stat-col">4</td>
+                                            <td class="text-end points-col">20</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">8.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/suceava.png" class="team-logo rounded-circle" alt="Suceava">
+                                                    <span class="team-name">Suceava</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">17</td>
+                                            <td class="d-none d-md-table-cell stat-col">8</td>
+                                            <td class="d-none d-md-table-cell stat-col">1</td>
+                                            <td class="d-none d-md-table-cell stat-col">8</td>
+                                            <td class="text-end points-col">17</td>
+                                        </tr>
+                                        
+                                        <tr class="u-cluj-row">
+                                            <td class="text-start"><span class="rank-number">9.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/U_Cluj.png" class="team-logo rounded-circle border border-dark" alt="U Cluj">
+                                                    <span class="team-name">'U' Cluj</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col" style="color: var(--u-black);">18</td>
+                                            <td class="d-none d-md-table-cell stat-col" style="color: var(--u-black);">3</td>
+                                            <td class="d-none d-md-table-cell stat-col" style="color: var(--u-black);">2</td>
+                                            <td class="d-none d-md-table-cell stat-col" style="color: var(--u-black);">13</td>
+                                            <td class="text-end points-col">8</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">10.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/csm_constanta.png" class="team-logo rounded-circle" alt="Constanta">
+                                                    <span class="team-name">CSM Constanța</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">17</td>
+                                            <td class="d-none d-md-table-cell stat-col">2</td>
+                                            <td class="d-none d-md-table-cell stat-col">3</td>
+                                            <td class="d-none d-md-table-cell stat-col">12</td>
+                                            <td class="text-end points-col">7</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number rank-red">11.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/sighisoara.png" class="team-logo rounded-circle" alt="Sighisoara">
+                                                    <span class="team-name">CSM Sighișoara</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">17</td>
+                                            <td class="d-none d-md-table-cell stat-col">0</td>
+                                            <td class="d-none d-md-table-cell stat-col">0</td>
+                                            <td class="d-none d-md-table-cell stat-col">17</td>
+                                            <td class="text-end points-col" style="color: #dc3545;">0</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clasament Feminin -->
+                    <div class="tab-pane fade" id="feminin">
+                        <div class="standings-container">
+                            <h4 class="fw-bold mb-4 text-center">Liga națională Feminin</h4>
+                            <div class="table-responsive">
+                                <table class="table align-middle text-center">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-start" style="width: 50px;">Poz</th>
+                                            <th scope="col" class="text-start">Echipă</th>
+                                            <th scope="col" class="d-none d-md-table-cell">Meciuri</th>
+                                            <th scope="col" class="d-none d-md-table-cell">Victorii</th>
+                                            <th scope="col" class="d-none d-md-table-cell">Egaluri</th>
+                                            <th scope="col" class="d-none d-md-table-cell">Înfrângeri</th>
+                                            <th scope="col" class="text-end">Puncte</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">1.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/CSM_Bistrița_logo.png" class="team-logo rounded-circle" alt="Gloria Bistrita">
+                                                    <span class="team-name">Gloria Bistrița</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">19</td>
+                                            <td class="d-none d-md-table-cell stat-col">18</td>
+                                            <td class="d-none d-md-table-cell stat-col">0</td>
+                                            <td class="d-none d-md-table-cell stat-col">1</td>
+                                            <td class="text-end points-col">36</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">2.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/CSM_București.png" class="team-logo rounded-circle" alt="CSM Bucuresti">
+                                                    <span class="team-name">CSM București</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">19</td>
+                                            <td class="d-none d-md-table-cell stat-col">17</td>
+                                            <td class="d-none d-md-table-cell stat-col">1</td>
+                                            <td class="d-none d-md-table-cell stat-col">1</td>
+                                            <td class="text-end points-col">35</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">3.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/corona_brasov.png" class="team-logo rounded-circle" alt="Corona Brasov">
+                                                    <span class="team-name">Corona Brașov</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">18</td>
+                                            <td class="d-none d-md-table-cell stat-col">13</td>
+                                            <td class="d-none d-md-table-cell stat-col">1</td>
+                                            <td class="d-none d-md-table-cell stat-col">4</td>
+                                            <td class="text-end points-col">27</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">4.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/ramnicu_valcea.png" class="team-logo rounded-circle" alt="Ramnicu Valcea">
+                                                    <span class="team-name">Râmnicu Vâlcea</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">19</td>
+                                            <td class="d-none d-md-table-cell stat-col">12</td>
+                                            <td class="d-none d-md-table-cell stat-col">1</td>
+                                            <td class="d-none d-md-table-cell stat-col">6</td>
+                                            <td class="text-end points-col">25</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">5.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/CSM_Slatina.png" class="team-logo rounded-circle" alt="CSM Slatina">
+                                                    <span class="team-name">CSM Slatina</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">19</td>
+                                            <td class="d-none d-md-table-cell stat-col">10</td>
+                                            <td class="d-none d-md-table-cell stat-col">2</td>
+                                            <td class="d-none d-md-table-cell stat-col">7</td>
+                                            <td class="text-end points-col">22</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">6.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/dunarea_braila.png" class="team-logo rounded-circle" alt="Dunarea Braila">
+                                                    <span class="team-name">Dunărea Brăila</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">19</td>
+                                            <td class="d-none d-md-table-cell stat-col">9</td>
+                                            <td class="d-none d-md-table-cell stat-col">1</td>
+                                            <td class="d-none d-md-table-cell stat-col">9</td>
+                                            <td class="text-end points-col">19</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">7.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/baia_mare_fete.png" class="team-logo rounded-circle" alt="Baia Mare">
+                                                    <span class="team-name">Baia Mare</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">18</td>
+                                            <td class="d-none d-md-table-cell stat-col">9</td>
+                                            <td class="d-none d-md-table-cell stat-col">1</td>
+                                            <td class="d-none d-md-table-cell stat-col">8</td>
+                                            <td class="text-end points-col">19</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">8.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/rapid_bucuresti.png" class="team-logo rounded-circle" alt="Rapid Bucuresti">
+                                                    <span class="team-name">Rapid București</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">18</td>
+                                            <td class="d-none d-md-table-cell stat-col">8</td>
+                                            <td class="d-none d-md-table-cell stat-col">1</td>
+                                            <td class="d-none d-md-table-cell stat-col">9</td>
+                                            <td class="text-end points-col">17</td>
+                                        </tr>
+
+                                        <tr class="u-cluj-row">
+                                            <td class="text-start"><span class="rank-number">9.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/U_Cluj.png" class="team-logo rounded-circle border border-dark" alt="U Cluj">
+                                                    <span class="team-name">'U' Cluj</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col" style="color: var(--u-black);">19</td>
+                                            <td class="d-none d-md-table-cell stat-col" style="color: var(--u-black);">5</td>
+                                            <td class="d-none d-md-table-cell stat-col" style="color: var(--u-black);">0</td>
+                                            <td class="d-none d-md-table-cell stat-col" style="color: var(--u-black);">14</td>
+                                            <td class="text-end points-col">10</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number">10.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/scm_craiova.jpg" class="team-logo rounded-circle" alt="SCM Craiova">
+                                                    <span class="team-name">SCM Craiova</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">18</td>
+                                            <td class="d-none d-md-table-cell stat-col">4</td>
+                                            <td class="d-none d-md-table-cell stat-col">1</td>
+                                            <td class="d-none d-md-table-cell stat-col">13</td>
+                                            <td class="text-end points-col">9</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number rank-red">11.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/zalau.png" class="team-logo rounded-circle" alt="Zalau">
+                                                    <span class="team-name">Zalău</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">19</td>
+                                            <td class="d-none d-md-table-cell stat-col">1</td>
+                                            <td class="d-none d-md-table-cell stat-col">2</td>
+                                            <td class="d-none d-md-table-cell stat-col">16</td>
+                                            <td class="text-end points-col" style="color: #dc3545;">4</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-start"><span class="rank-number rank-red">12.</span></td>
+                                            <td class="text-start">
+                                                <div class="d-flex align-items-center">
+                                                    <img src="./imagini/galati.png" class="team-logo rounded-circle" alt="CSM Galati">
+                                                    <span class="team-name">CSM Galați</span>
+                                                </div>
+                                            </td>
+                                            <td class="d-none d-md-table-cell stat-col">19</td>
+                                            <td class="d-none d-md-table-cell stat-col">0</td>
+                                            <td class="d-none d-md-table-cell stat-col">1</td>
+                                            <td class="d-none d-md-table-cell stat-col">18</td>
+                                            <td class="text-end points-col" style="color: #dc3545;">1</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold"><i class="fa-solid fa-shield-halved me-2"></i>U CLUJ HANDBAL</h5>
+                    <p>Tradiție și performanță în sportul românesc.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold">Link-uri Rapide</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="stiri.html">Ultimele Știri</a></li>
+                        <li class="mb-2"><a href="meciuri.html">Program Meciuri</a></li>
+                        <li class="mb-2"><a href="clasament.html">Clasament</a></li>
+                        <li class="mb-2"><a href="lot.html">Lot Jucători</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold">Contact</h5>
+                    <p class="mb-1"><i class="fa-solid fa-location-dot me-2"></i>Splaiul Independenței 252, Cluj-Napoca</p>
+                    <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i> contact@u-cluj.ro</p>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-4 pt-3 text-center">
+                <p class="mb-0">© 2026 Universitatea Cluj Handbal. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripturi -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

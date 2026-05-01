@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Știri | U Cluj Handbal</title>
+    
+    <!-- Fonturi și Framework-uri -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS Extern -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-shield-halved me-2"></i>U CLUJ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold text-white" href="stiri.html">Știri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meciuri.html">Meciuri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clasament.html">Clasament</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lot.html">Lot Echipa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bilete.html"><i class="fa-solid fa-ticket me-1"></i> Bilete</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Adăugată clasă specifică pentru bannerul de la știri -->
+    <header class="page-header page-header-stiri">
+        <div class="container" data-aos="zoom-in">
+            <h1 class="display-4 fw-bold">Ultimele Noutăți</h1>
+            <p class="lead opacity-75">Fii la curent cu tot ce mișcă în familia U Cluj.</p>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row g-4">
+            
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card premium-card position-relative">
+                    <div class="card-img-wrapper">
+                        <span class="badge badge-u">Liga Nationala</span>
+                        <img src="./imagini/handbal_masculin.png" class="card-img-top" alt="Stire 1">
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <span class="card-date mb-2"><i class="fa-regular fa-calendar me-1"></i> 20 Mai 2026</span>
+                        <h4 class="card-title fw-bold mb-3">Victorie spectaculoasă în fața propriilor suporteri</h4>
+                        <p class="card-text text-muted mb-4">Băieții noștri au făcut un meci senzațional în etapa a 5-a, reușind să se impună într-o atmosferă incendiară creată de galeria clujeană.</p>
+                        
+                        <a href="stire-victorie.html" class="stretched-link text-dark fw-bold text-decoration-none text-uppercase mt-auto" style="font-size: 0.85rem;">
+                            Citește articolul <i class="fa-solid fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="card premium-card position-relative">
+                    <div class="card-img-wrapper">
+                        <span class="badge badge-u">Transferuri</span>
+                        <img src="./imagini/calin_hossu.png" class="card-img-top" alt="Stire 2">
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <span class="card-date mb-2"><i class="fa-regular fa-calendar me-1"></i> 18 Mai 2026</span>
+                        <h4 class="card-title fw-bold mb-3">Un nou inter stânga se alătură echipei U Cluj</h4>
+                        <p class="card-text text-muted mb-4">Conducerea clubului anunță parafarea unui nou contract valabil pe 2 sezoane cu unul dintre cei mai promițători jucători din ligă.</p>
+                        <a href="stire-transfer.html" class="stretched-link text-dark fw-bold text-decoration-none text-uppercase mt-auto" style="font-size: 0.85rem;">
+                            Citește articolul <i class="fa-solid fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="card premium-card position-relative">
+                    <div class="card-img-wrapper">
+                        <span class="badge badge-u">Academia</span>
+                        <img src="./imagini/u_cluj_copii.png" class="card-img-top" alt="Stire 3">
+                    </div>
+                    <div class="card-body p-4 d-flex flex-column">
+                        <span class="card-date mb-2"><i class="fa-regular fa-calendar me-1"></i> 15 Mai 2026</span>
+                        <h4 class="card-title fw-bold mb-3">Au început înscrierile la centrul de copii și juniori</h4>
+                        <p class="card-text text-muted mb-4">Visezi să joci în tricoul alb-negru? Te așteptăm la preselecțiile organizate în Sala Sporturilor "Horia Demian" în acest weekend.</p>
+                        <a href="stire-juniori.html" class="stretched-link text-dark fw-bold text-decoration-none text-uppercase mt-auto" style="font-size: 0.85rem;">
+                            Citește articolul <i class="fa-solid fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold"><i class="fa-solid fa-shield-halved me-2"></i>U CLUJ HANDBAL</h5>
+                    <p>Tradiție și performanță în sportul românesc. Susține echipa fanion a Transilvaniei.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold">Link-uri Rapide</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="stiri.html" class="text-decoration-none" style="color: inherit;">Ultimele Știri</a></li>
+                        <li class="mb-2"><a href="meciuri.html" class="text-decoration-none" style="color: inherit;">Program Meciuri</a></li>
+                        <li class="mb-2"><a href="clasament.html" class="text-decoration-none" style="color: inherit;">Clasament</a></li>
+                        <li class="mb-2"><a href="lot.html" class="text-decoration-none" style="color: inherit;">Lot Jucători</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold">Contact</h5>
+                    <p class="mb-1"><i class="fa-solid fa-location-dot me-2"></i> Splaiul Independenței 252, Cluj-Napoca</p>
+                    <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i> contact@u-cluj.ro</p>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-4 pt-3 text-center">
+                <p class="mb-0">© 2026 Universitatea Cluj Handbal. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Conectare JS Extern -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

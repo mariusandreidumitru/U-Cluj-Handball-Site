@@ -1,0 +1,266 @@
+:root {
+    --u-black: #0a0a0a;
+    --u-white: #ffffff;
+    --u-gray-light: #f8f9fa;
+    --transition: all 0.3s ease-in-out;
+}
+
+body { font-family: 'Open Sans', sans-serif; background-color: var(--u-gray-light); color: var(--u-black); }
+h1, h2, h3, h4, h5, .navbar-brand { font-family: 'Montserrat', sans-serif; text-transform: uppercase; }
+
+/* Navigare */
+.navbar { background-color: var(--u-black); padding: 15px 0; transition: var(--transition); }
+.navbar-brand { font-weight: 900; font-size: 1.5rem; letter-spacing: 1px; color: var(--u-white) !important; }
+.nav-link { font-weight: 600; font-size: 0.9rem; letter-spacing: 1px; color: #aaaaaa !important; position: relative; margin: 0 10px; }
+.nav-link:hover, .nav-link.active { color: var(--u-white) !important; }
+
+/* Page Header */
+.page-header { background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('../imagini/handbal_1.png') center/cover; padding: 120px 0 80px; color: var(--u-white); text-align: center; margin-top: 66px;}
+.page-title { font-weight: 900; letter-spacing: 2px; margin-bottom: 20px; }
+
+/* Tab-uri Selecție */
+.nav-pills { background: #fff; padding: 5px; border-radius: 50px; display: inline-flex; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.nav-pills .nav-link { color: var(--u-black) !important; font-weight: 700; border-radius: 50px; padding: 12px 35px; margin: 0; transition: var(--transition); border: none; background-color: transparent; text-transform: uppercase;}
+.nav-pills .nav-link:hover { background-color: #e9ecef; }
+.nav-pills .nav-link.active { background-color: var(--u-black) !important; color: var(--u-white) !important; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+
+/* Ticket Cards (Designul de bază e Negru) */
+.ticket-item { background: var(--u-white); border-radius: 0; border: none; border-left: 5px solid var(--u-black); box-shadow: 0 5px 20px rgba(0,0,0,0.05); transition: var(--transition); position: relative; overflow: hidden; }
+.ticket-item:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+.ticket-date-box { background: var(--u-black); color: var(--u-white); padding: 20px; text-align: center; font-family: 'Montserrat', sans-serif; transition: var(--transition); }
+.ticket-date-box .day { font-size: 2.5rem; font-weight: 900; line-height: 1; }
+.ticket-date-box .month { font-size: 1rem; font-weight: 700; letter-spacing: 2px; }
+
+.btn-ucluj { background-color: var(--u-black); color: var(--u-white); font-family: 'Montserrat', sans-serif; font-weight: 700; border-radius: 0; padding: 10px 25px; letter-spacing: 1px; transition: var(--transition); border: 2px solid var(--u-black); text-transform: uppercase; }
+.btn-ucluj:hover { background-color: transparent; color: var(--u-black); }
+
+/* Formular si Modal */
+.form-control, .form-select { border-radius: 0; }
+.payment-option-card { border: 2px solid #ddd; padding: 15px; cursor: pointer; transition: var(--transition); text-align: center; font-weight: bold; }
+.payment-option-card:hover { border-color: var(--u-black); background-color: #f8f9fa; }
+.btn-check:checked + .payment-option-card { border-color: var(--u-black); background-color: var(--u-black); color: var(--u-white); }
+
+footer { background-color: var(--u-black); color: #888; padding: 50px 0 20px; font-size: 0.9rem; margin-top: 80px; }
+
+/* Stiluri Clasament Premium Alb/Negru */
+.standings-container { background-color: var(--u-white); border-radius: 0; padding: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-top: 5px solid var(--u-black); }
+.table { margin-bottom: 0; }
+.table thead th { background-color: var(--u-gray-light); color: var(--u-black); border-bottom: 2px solid var(--u-black); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 15px 10px; }
+.table tbody tr { border-bottom: 1px solid #eee; transition: background-color 0.2s; }
+.table tbody tr:hover { background-color: var(--u-gray-light); }
+.table td { padding: 15px 10px; vertical-align: middle; color: #333; border: none; }
+
+/* Elemente specifice echipelor */
+.rank-number { font-weight: 900; font-size: 1.1rem; width: 40px; text-align: center; display: inline-block; color: var(--u-black); }
+.rank-red { background-color: #dc3545; color: var(--u-white); padding: 2px 0; border-radius: 4px; } 
+.team-logo { width: 35px; height: 35px; object-fit: contain; margin-right: 15px; }
+.team-name { font-weight: 700; font-size: 1.05rem; letter-spacing: 0.5px; color: var(--u-black); }
+
+/* Highlight U Cluj */
+.u-cluj-row { background-color: rgba(0, 0, 0, 0.03) !important; border-left: 4px solid var(--u-black) !important; }
+.u-cluj-row .team-name { font-weight: 900; color: var(--u-black); text-transform: uppercase; }
+
+.stat-col { color: #666; font-weight: 600; }
+.points-col { font-weight: 900; font-size: 1.2rem; color: var(--u-black); }
+
+/* =========================================
+   STILURI SPECIFICE PENTRU INDEX.HTML
+   ========================================= */
+
+/* Hero Section (Carusel Mare) */
+.hero-section { position: relative; height: 85vh; background: var(--u-black); overflow: hidden; }
+.hero-slider, .hero-slider .carousel-inner, .hero-slider .carousel-item { height: 85vh; }
+.hero-slider .carousel-item { background-position: center top; background-size: cover; }
+.hero-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to right, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 100%); z-index: 1; }
+.hero-content { position: relative; z-index: 2; color: var(--u-white); height: 100%; display: flex; align-items: center; }
+.hero-title { font-weight: 900; font-size: 4.5rem; line-height: 1.1; }
+
+/* Săgeți Slider Hero */
+.hero-slider .carousel-control-prev, .hero-slider .carousel-control-next { width: 8%; z-index: 10; opacity: 0.8; }
+.hero-slider .carousel-control-prev-icon, .hero-slider .carousel-control-next-icon { width: 3.5rem; height: 3.5rem; }
+
+/* Carusel Panou Negru (Următorul Meci) */
+.next-match-panel { background: var(--u-black); color: var(--u-white); position: relative; overflow: hidden; }
+.next-match-panel::before { content: 'VS'; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 10rem; font-weight: 900; color: rgba(255,255,255,0.03); z-index: 0; }
+.match-slide-content { padding: 40px; position: relative; z-index: 1; }
+.next-match-panel .carousel-control-prev, .next-match-panel .carousel-control-next { width: 5%; opacity: 0.8; }
+
+/* Carduri Știri (Premium Card) */
+.premium-card { background: var(--u-white); border: none; border-radius: 0; transition: var(--transition); box-shadow: 0 5px 15px rgba(0,0,0,0.05); overflow: hidden; height: 100%; }
+.premium-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+.badge-u { background-color: var(--u-black); color: var(--u-white); padding: 5px 10px; font-weight: 600; text-transform: uppercase; font-size: 0.75rem; }
+/* =========================================
+   STILURI SPECIFICE PENTRU CONTACT.HTML
+   ========================================= */
+
+/* Info Cards */
+.contact-info-card { background: var(--u-white); padding: 40px 30px; text-align: center; border: none; border-radius: 0; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: var(--transition); height: 100%; position: relative; overflow: hidden; z-index: 1; }
+.contact-info-card::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--u-black); transform: scaleX(0); transition: transform 0.4s ease; transform-origin: left; z-index: -1; }
+.contact-info-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+.contact-info-card:hover::before { transform: scaleX(1); }
+.icon-wrapper { width: 80px; height: 80px; background: var(--u-gray-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2rem; color: var(--u-black); margin: 0 auto 20px; transition: var(--transition); }
+.contact-info-card:hover .icon-wrapper { background: var(--u-black); color: var(--u-white); }
+
+/* Formular Contact */
+.contact-form-wrapper { background: var(--u-white); padding: 50px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); position: relative; }
+.contact-form-wrapper::before { content: ''; position: absolute; top: -20px; left: -20px; width: 100px; height: 100px; background: repeating-linear-gradient(45deg, var(--u-accent), var(--u-accent) 2px, transparent 2px, transparent 10px); z-index: -1; }
+
+/* Buton Contact Dezactivat */
+.btn-ucluj:disabled { background-color: #666; border-color: #666; cursor: not-allowed; opacity: 0.7; }
+
+/* Hartă Contact */
+.map-container { height: 100%; min-height: 400px; width: 100%; background: #eee; position: relative; }
+.map-container iframe { width: 100%; height: 100%; border: 0; position: absolute; top: 0; left: 0; filter: grayscale(100%) contrast(1.2); transition: var(--transition); }
+.map-container iframe:hover { filter: none; }
+
+/* =========================================
+   STILURI SPECIFICE PENTRU LOT.HTML
+   ========================================= */
+
+/* Player Cards */
+.player-card { background: var(--u-white); border: none; border-radius: 0; overflow: hidden; position: relative; transition: var(--transition); box-shadow: 0 5px 20px rgba(0,0,0,0.03); }
+.player-card:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+.player-img-container { position: relative; overflow: hidden; background: #e9ecef; aspect-ratio: 3/4; display: flex; align-items: center; justify-content: center; }
+.player-img-container img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.player-card:hover .player-img-container img { transform: scale(1.05); }
+
+/* Informații Jucător */
+.player-info { padding: 20px; text-align: center; border-bottom: 4px solid transparent; transition: var(--transition); }
+.player-card:hover .player-info { border-bottom-color: var(--u-black); }
+.player-name { font-weight: 900; font-size: 1.15rem; margin-bottom: 5px; color: var(--u-black); }
+.player-role { color: #666; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+
+/* Căpitan & Ecusoane */
+.badge-captain { position: absolute; top: 15px; left: 15px; background: #ffc107; color: #000; font-weight: 800; padding: 5px 12px; border-radius: 0; font-size: 0.75rem; letter-spacing: 1px; z-index: 2; box-shadow: 0 2px 5px rgba(0,0,0,0.2);}
+
+/* Titluri Secțiuni */
+.roster-title { font-weight: 900; font-size: 1.8rem; border-bottom: 3px solid var(--u-black); display: inline-block; padding-bottom: 5px; margin-bottom: 30px; }
+
+/* =========================================
+   STILURI SPECIFICE PENTRU MECIURI.HTML
+   ========================================= */
+
+/* Suprascriere fundal antet doar pentru pagina Meciuri */
+.page-header-meciuri {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../imagini/handbal_2.png') center/cover;
+}
+
+/* Match Cards Aliniate Orizontal */
+.match-card { background: var(--u-white); border: none; border-radius: 0; box-shadow: 0 5px 15px rgba(0,0,0,0.03); transition: var(--transition); position: relative; border-left: 4px solid transparent; }
+.match-card:hover { transform: translateX(5px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); border-left-color: var(--u-black); }
+.team-name { font-weight: 900; font-size: 1.1rem; line-height: 1.2; }
+
+/* Box Scor - Forțăm Orizontala */
+.score-box { 
+    background: var(--u-black); 
+    color: var(--u-white); 
+    font-weight: 900; 
+    font-size: 1.8rem; 
+    padding: 8px 25px; 
+    display: inline-block; 
+    letter-spacing: 2px; 
+    white-space: nowrap; 
+    min-width: 140px;
+    text-align: center;
+}
+
+.vs-box { font-weight: 900; color: #ccc; font-size: 1.2rem; white-space: nowrap; }
+.match-date { font-weight: 700; color: #666; font-size: 0.85rem; letter-spacing: 1px; }
+
+/* Buton Bilete în Meciuri */
+.btn-bilete { background-color: var(--u-black); color: var(--u-white); font-weight: bold; border-radius: 0; transition: var(--transition); text-transform: uppercase; border: 2px solid var(--u-black); text-decoration: none; display: inline-block;}
+.btn-bilete:hover { background-color: transparent; color: var(--u-black); }
+.badge-status { font-size: 0.8rem; letter-spacing: 1px; padding: 8px 12px; border-radius: 0; min-width: 110px; }
+
+/* =========================================
+   STILURI SPECIFICE PENTRU ARTICOLE (STIRI)
+   ========================================= */
+
+/* Header-ul articolelor */
+.article-header { padding: 160px 0 80px; color: var(--u-white); margin-top: 66px; }
+.article-title { font-weight: 900; font-size: 3.5rem; line-height: 1.1; margin-bottom: 25px; text-transform: uppercase; color: var(--u-white); }
+.article-meta { font-family: 'Montserrat', sans-serif; font-size: 0.9rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: #ccc; }
+
+/* Imagini fundal pentru articole (schimbă linkul din HTML) */
+.stire-bg-1 { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)), url('../imagini/img.jpg') center/cover; }
+.stire-bg-2 { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)), url('../imagini/u_cluj_copii.png') center/cover; }
+.stire-bg-3 { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)), url('../imagini/calin_hossu.png') center/cover; }
+
+/* Conținut text (Tipografie) */
+.article-content { font-family: 'Merriweather', serif; font-size: 1.2rem; line-height: 1.9; color: #333; }
+.article-content p { margin-bottom: 30px; text-align: justify; }
+
+/* Efect de prima literă (Drop Cap) */
+.article-content > p:first-of-type::first-letter { font-family: 'Montserrat', sans-serif; font-size: 5rem; font-weight: 900; float: left; margin: 10px 20px 0 0; line-height: 0.8; color: var(--u-black); }
+
+/* Citat/Highlight în articol */
+.u-highlight { border-left: 6px solid var(--u-white); padding: 25px 40px; background: var(--u-black); color: var(--u-white); font-style: italic; font-size: 1.4rem; margin: 50px 0; position: relative; }
+
+/* Formular Academia (din stire-juniori) */
+.registration-box { background: var(--u-gray-light); padding: 40px; border-top: 5px solid var(--u-black); margin-top: 50px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.btn-submit { background: var(--u-black); color: var(--u-white); border: none; padding: 15px 40px; font-family: 'Montserrat', sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: 2px; transition: var(--transition); width: 100%; }
+.btn-submit:hover { background: #333; transform: translateY(-2px); }
+
+#success-message { display: none; } /* ACEASTA ESTE LINIA CARE LIPSEA */
+
+.success-box { background: #d4edda; color: #155724; padding: 30px; text-align: center; border: 1px solid #c3e6cb; }
+
+/* Statistici Jucător (din stire-transfer) */
+.player-stats { background: var(--u-black); color: var(--u-white); padding: 30px; margin: 40px 0; font-family: 'Montserrat', sans-serif; }
+.stat-item { text-align: center; border-right: 1px solid rgba(255,255,255,0.1); }
+.stat-item:last-child { border-right: none; }
+.stat-value { font-size: 2rem; font-weight: 900; display: block; }
+.stat-label { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 1px; color: #888; }
+
+/* Butonul de înapoi */
+.btn-back { display: inline-flex; align-items: center; margin-top: 50px; font-family: 'Montserrat', sans-serif; font-weight: 700; text-transform: uppercase; color: var(--u-black); border: 2px solid var(--u-black); padding: 12px 30px; text-decoration: none; transition: var(--transition); letter-spacing: 1px; }
+.btn-back:hover { background: var(--u-black); color: var(--u-white); transform: translateX(-5px); }
+
+/* Imagine specifică pentru articolul 4 */
+.stire-bg-4 { background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)), url('../imagini/handbal_masculin.png') center/cover; }
+
+/* Adăugare iconiță ghilimele pentru zona de citat */
+.u-highlight::after { 
+    content: '\f10e'; 
+    font-family: 'Font Awesome 6 Free'; 
+    font-weight: 900; 
+    position: absolute; 
+    top: 10px; 
+    right: 20px; 
+    color: rgba(255,255,255,0.1); 
+    font-size: 3rem; 
+}
+
+/* =========================================
+   STILURI SPECIFICE PENTRU STIRI.HTML
+   ========================================= */
+
+/* Suprascriere fundal antet doar pentru pagina Știri */
+.page-header-stiri { 
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../imagini/handbal2.jpg') center/cover; 
+}
+
+/* Efect avansat de Hover pentru pozele din cardurile de stiri */
+.card-img-wrapper { overflow: hidden; position: relative; }
+.card-img-wrapper img { transition: transform 0.6s ease; height: 250px; object-fit: cover; width: 100%; }
+.premium-card:hover .card-img-wrapper img { transform: scale(1.08); }
+
+/* Poziționare și stilizare specifică elementelor din cardul de știri */
+.premium-card .badge-u { position: absolute; top: 15px; left: 15px; z-index: 2; padding: 5px 10px; font-weight: 600; letter-spacing: 1px; }
+.card-date { font-size: 0.8rem; color: #888; font-weight: 600; letter-spacing: 1px; }
+
+/* =========================================
+   STILURI GLOBALE PENTRU FOOTER (SUBSOL)
+   ========================================= */
+footer h5 { color: var(--u-white); margin-bottom: 20px; }
+footer p { color: #ffffff !important; }
+
+/* Forțăm link-urile să fie albe și fără subliniere */
+footer a { color: #ffffff !important; text-decoration: none !important; transition: var(--transition); }
+
+/* Efectul la trecerea cu mouse-ul */
+footer a:hover { color: #aaaaaa !important; padding-left: 5px; }
+
+/* Iconițele de Social Media */
+.social-links a { color: var(--u-white) !important; background: rgba(255,255,255,0.1); width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; margin-right: 10px; transition: var(--transition); }
+.social-links a:hover { background: var(--u-white) !important; color: var(--u-black) !important; transform: translateY(-3px); padding-left: 0; }

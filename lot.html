@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lot Echipa | U Cluj Handbal</title>
+    
+    <!-- Fonturi și Framework-uri -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS-ul nostru separat -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-shield-halved me-2"></i>U CLUJ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                    <li class="nav-item"><a class="nav-link" href="stiri.html">Știri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meciuri.html">Meciuri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clasament.html">Clasament</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold text-white" href="lot.html">Lot Echipa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bilete.html"><i class="fa-solid fa-ticket me-1"></i> Bilete</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container" data-aos="zoom-in" data-aos-duration="800">
+            <h1 class="page-title display-4">Lotul Echipei</h1>
+            <p class="lead opacity-75">Sezonul Competițional 2025 - 2026</p>
+        </div>
+    </header>
+
+    <section class="container my-5 pt-4">
+        
+        <div class="text-center mb-5" data-aos="fade-up">
+            <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#masculin">MASCULIN</button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#feminin">FEMININ</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tab-content" id="pills-tabContent">
+            
+            <!-- SECȚIUNE MASCULIN -->
+            <div class="tab-pane fade show active" id="masculin">
+                
+                <div class="text-center mb-4" data-aos="fade-up">
+                    <h2 class="roster-title text-uppercase">Staff Tehnic & Management</h2>
+                </div>
+                
+                <div class="row justify-content-center g-4 mb-5 pb-4 border-bottom">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="player-card">
+                            <div class="player-img-container" style="aspect-ratio: 1/1;">
+                                <img src="./imagini/liviu_hossu.png" alt="Liviu Hossu">
+                            </div>
+                            <div class="player-info bg-dark text-white">
+                                <h4 class="player-name text-white">LIVIU HOSSU</h4>
+                                <span class="player-role text-light opacity-75">Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="player-card">
+                            <div class="player-img-container" style="aspect-ratio: 1/1;">
+                                <img src="./imagini/carmen_amariei.png" alt="Carmen Amariei">
+                            </div>
+                            <div class="player-info bg-dark text-white">
+                                <h4 class="player-name text-white">CARMEN AMARIEI</h4>
+                                <span class="player-role text-light opacity-75">Antrenor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                        <div class="player-card">
+                            <div class="player-img-container" style="aspect-ratio: 1/1;">
+                                <img src="./imagini/liviu_jurca.png" alt="Liviu Jurcă">
+                            </div>
+                            <div class="player-info bg-dark text-white">
+                                <h4 class="player-name text-white">LIVIU JURCĂ</h4>
+                                <span class="player-role text-light opacity-75">Director Tehnic</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mb-4" data-aos="fade-up">
+                    <h2 class="roster-title text-uppercase">Lot Jucători</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card border border-dark border-2">
+                            <span class="badge-captain"><i class="fa-solid fa-star me-1"></i> CĂPITAN</span>
+                            <div class="player-img-container">
+                                <img src="./imagini/alexandru_coman.png" alt="Alexandru Coman">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">ALEXANDRU COMAN</h4>
+                                <span class="player-role">Coordonator</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/merla_mihai.png" alt="Mihai Merla">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">MIHAI MERLA</h4>
+                                <span class="player-role">Portar</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/filip_gabriel.png" alt="Gabriel Filip">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">GABRIEL FILIP</h4>
+                                <span class="player-role">Portar</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/greta_ionut.png" alt="Ionuț Greta">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">IONUȚ GRETA</h4>
+                                <span class="player-role">Pivot</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/dan_duta.png" alt="Dan Duță">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">DAN DUȚĂ</h4>
+                                <span class="player-role">Pivot</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/alexandru_coroian.png" alt="Alex Coroian">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">ALEXANDRU COROIAN</h4>
+                                <span class="player-role">Extremă Stânga</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/raul_ostace.png" alt="Raul Ostace">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">RAUL OSTACE</h4>
+                                <span class="player-role">Extremă Stânga</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/catalin_ghivil.png" alt="Cătălin Ghivil">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">CĂTĂLIN GHIVIL</h4>
+                                <span class="player-role">Extremă Stânga</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/bogdan_ioan.png" alt="Bogdan-Ioan Paul">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">BOGDAN-IOAN PAUL</h4>
+                                <span class="player-role">Extremă Dreapta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/zven_nidvard.png" alt="Zven Nidvard">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">ZVEN NIDVARD</h4>
+                                <span class="player-role">Extremă Dreapta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/calin_hossu.png" alt="Călin Hossu">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">CĂLIN HOSSU</h4>
+                                <span class="player-role">Inter Stânga</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/burzo_andrei.png" alt="Andrei Burzo">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">ANDREI BURZO</h4>
+                                <span class="player-role">Inter Dreapta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- SECȚIUNE FEMININ -->
+            <div class="tab-pane fade" id="feminin">
+                
+                <div class="text-center mb-4" data-aos="fade-up">
+                    <h2 class="roster-title text-uppercase">Staff Tehnic & Management</h2>
+                </div>
+                
+                <div class="row justify-content-center g-4 mb-5 pb-4 border-bottom">
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="player-card">
+                            <div class="player-img-container" style="aspect-ratio: 1/1;">
+                                <img src="./imagini/valentina_ardelean.png" alt="Valentina Ardean-Elisei">
+                            </div>
+                            <div class="player-info bg-dark text-white">
+                                <h4 class="player-name text-white" style="font-size: 1rem;">VALENTINA ARDEAN-ELISEI</h4>
+                                <span class="player-role text-light opacity-75">Antrenor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                        <div class="player-card">
+                            <div class="player-img-container" style="aspect-ratio: 1/1;">
+                                <img src="./imagini/cristian_coroian.png" alt="Cristian Coroian">
+                            </div>
+                            <div class="player-info bg-dark text-white">
+                                <h4 class="player-name text-white">CRISTIAN COROIAN</h4>
+                                <span class="player-role text-light opacity-75">Director Sportiv</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center mb-4" data-aos="fade-up">
+                    <h2 class="roster-title text-uppercase">Lot Jucătoare</h2>
+                </div>
+
+                <div class="row g-4">
+                    
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/tagean_viorica.png" alt="Viorica Țăgean">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">VIORICA ȚĂGEAN</h4>
+                                <span class="player-role">Portar</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/pop_denisa.png" alt="Denisa Pop">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">DENISA POP</h4>
+                                <span class="player-role">Portar</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/daroczi_alyssia.png" alt="Alyssia Daroczi">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">ALYSSIA DAROCZI</h4>
+                                <span class="player-role">Centru</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/alexandra_ploscar.png" alt="Alexandra Ploscar">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">ALEXANDRA PLOSCAR</h4>
+                                <span class="player-role">Pivot</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/cercel_ariana.png" alt="Ariana Cercel">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">ARIANA CERCEL</h4>
+                                <span class="player-role">Extremă Stânga</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/tania_fechete.png" alt="Tania Fechete">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">TANIA FECHETE</h4>
+                                <span class="player-role">Extremă Stânga</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/dragunoiu_maria.png" alt="Maria Drăgunoiu">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">MARIA DRĂGUNOIU</h4>
+                                <span class="player-role">Extremă Dreapta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/andrada_chirila.png" alt="Andrada Chirilă">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">ANDRADA CHIRILĂ</h4>
+                                <span class="player-role">Extremă Dreapta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/alexandra_cantor.png" alt="Alexandra Cantor">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">ALEXANDRA CANTOR</h4>
+                                <span class="player-role">Inter Stânga</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/alyssa_miron.png" alt="Alyssa Miron">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">ALYSSA MIRON</h4>
+                                <span class="player-role">Inter Stânga</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/sofia_muresan.png" alt="Sofia Mureșan">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">SOFIA MUREȘAN</h4>
+                                <span class="player-role">Inter Stânga</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up">
+                        <div class="player-card">
+                            <div class="player-img-container">
+                                <img src="./imagini/irimia_cristina.png" alt="Cristina Irimia">
+                            </div>
+                            <div class="player-info">
+                                <h4 class="player-name">CRISTINA IRIMIA</h4>
+                                <span class="player-role">Inter Dreapta</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold"><i class="fa-solid fa-shield-halved me-2"></i>U CLUJ HANDBAL</h5>
+                    <p>Tradiție și performanță în sportul românesc.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold">Link-uri Rapide</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="stiri.html">Ultimele Știri</a></li>
+                        <li class="mb-2"><a href="meciuri.html">Program Meciuri</a></li>
+                        <li class="mb-2"><a href="clasament.html">Clasament</a></li>
+                        <li class="mb-2"><a href="lot.html">Lot Jucători</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold">Contact</h5>
+                    <p class="mb-1"><i class="fa-solid fa-location-dot me-2"></i>Splaiul Independenței 252, Cluj-Napoca</p>
+                    <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i> contact@u-cluj.ro</p>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-4 pt-3 text-center">
+                <p class="mb-0">© 2026 Universitatea Cluj Handbal. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripturi Framework-uri -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Conectare JS Extern -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

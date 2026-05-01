@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Înscrieri Academia | U Cluj Handbal</title>
+    
+    <!-- Fonturi și Framework-uri externe -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600;700&family=Merriweather:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS Extern -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-white">
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="fa-solid fa-shield-halved me-2"></i>U CLUJ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="fa-solid fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold text-white" href="stiri.html">Știri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meciuri.html">Meciuri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clasament.html">Clasament</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lot.html">Lot Echipa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bilete.html"><i class="fa-solid fa-ticket me-1"></i> Bilete</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Adăugăm clasa specifică 'stire-bg-2' pentru imaginea de fundal -->
+    <header class="article-header stire-bg-2">
+        <div class="container text-center" data-aos="fade-up">
+            <span class="badge badge-u mb-3">Academia</span>
+            <h1 class="article-title">Au început înscrierile la centrul de copii și juniori</h1>
+            <div class="article-meta">
+                <span><i class="fa-regular fa-calendar me-2"></i> 15 Mai 2026</span>
+                <span class="mx-3">|</span>
+                <span><i class="fa-solid fa-graduation-cap me-2"></i> Juniori</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5 py-4">
+        <article class="row justify-content-center">
+            <div class="col-lg-8" data-aos="fade-up">
+                
+                <div class="article-content">
+                    <p>Viitorul handbalului clujean se construiește astăzi! Clubul nostru își deschide porțile pentru o nouă generație de sportivi dornici să performeze sub culorile alb-negru. Invităm toți copiii născuți între anii 2012 și 2015 la selecția ce va avea loc sâmbătă la Sala Sporturilor "Horia Demian".</p>
+                </div>
+
+                <div class="registration-box" id="form-container">
+                    <h3 class="fw-bold mb-4 text-center">Formular de Pre-înscriere</h3>
+                    <form id="junior-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Nume Copil</label>
+                                <input type="text" class="form-control" placeholder="Ex: Popescu" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Prenume Copil</label>
+                                <input type="text" class="form-control" placeholder="Ex: Andrei" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Nume Părinte</label>
+                                <input type="text" class="form-control" placeholder="Ex: Popescu" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Prenume Părinte</label>
+                                <input type="text" class="form-control" placeholder="Ex: Ionuț" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Număr Telefon Părinte</label>
+                                <input type="tel" class="form-control" placeholder="07xx xxx xxx" required>
+                            </div>
+                            <div class="col-md-12">
+                                <label class="form-label">Email Părinte (Optional)</label>
+                                <input type="email" class="form-control" placeholder="exemplu@mail.com">
+                            </div>
+                            <div class="col-12 mt-4">
+                                <button type="submit" class="btn-submit">Trimite Înscrierea</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="success-message" class="mt-5" data-aos="zoom-in">
+                    <div class="success-box">
+                        <i class="fa-solid fa-circle-check fa-3x mb-3"></i>
+                        <h3 class="fw-bold">Înscriere Trimisă cu Succes!</h3>
+                        <p class="mb-0">Vă mulțumim pentru interes. Un reprezentant al clubului vă va contacta în curând.</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-5 pt-4 border-top">
+                    <a href="stiri.html" class="btn-back"><i class="fa-solid fa-arrow-left me-2"></i> Înapoi la Știri</a>
+                </div>
+
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold"><i class="fa-solid fa-shield-halved me-2"></i>U CLUJ HANDBAL</h5>
+                    <p>Tradiție și performanță în sportul românesc.</p>
+                    <div class="social-links mt-3">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold">Link-uri Rapide</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="stiri.html">Ultimele Știri</a></li>
+                        <li class="mb-2"><a href="meciuri.html">Program Meciuri</a></li>
+                        <li class="mb-2"><a href="clasament.html">Clasament</a></li>
+                        <li class="mb-2"><a href="lot.html">Lot Jucători</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold">Contact</h5>
+                    <p class="mb-1"><i class="fa-solid fa-location-dot me-2"></i>Splaiul Independenței 252, Cluj-Napoca</p>
+                    <p class="mb-1"><i class="fa-solid fa-envelope me-2"></i> contact@u-cluj.ro</p>
+                </div>
+            </div>
+            <div class="border-top border-secondary mt-4 pt-3 text-center">
+                <p class="mb-0">© 2026 Universitatea Cluj Handbal. Toate drepturile rezervate.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Scripturi Framework-uri -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Conectare JS Extern -->
+    <script src="./js/main.js"></script>
+</body>
+</html>
