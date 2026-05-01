@@ -4,11 +4,11 @@ Acest proiect reprezintă o platformă web modernă și performantă dedicată c
 
 ### **🚀 Funcționalități Principale**
 *   **Arhitectură Modulară:** Separarea completă a structurii (HTML) de design (CSS) și logica de funcționare (JavaScript) pentru o mentenanță ușoară.
-*   **Design Responsive:** Interfața este optimizată pentru orice dispozitiv (Mobile, Tablet, Desktop) utilizând sistemul de grid Bootstrap 5[cite: 1].
-*   **Managementul Echipelor:** Secțiuni detaliate pentru echipa masculină și feminină, cu profiluri pentru jucători și staff tehnic[cite: 1, 4].
-*   **Sistem de Ticketing:** Pagină dedicată pentru rezervarea biletelor cu formulare integrate[cite: 2].
-*   **Centru de Știri:** Arhivă de articole cu design tip editorial pentru noutăți și transferuri[cite: 4, 10].
-*   **Integrare Google Maps:** Localizare precisă pentru Sala Sporturilor "Horia Demian" în pagina de contact[cite: 3].
+*   **Design Responsive:** Interfața este optimizată pentru orice dispozitiv (Mobile, Tablet, Desktop) utilizând sistemul de grid Bootstrap 5.
+*   **Managementul Echipelor:** Secțiuni detaliate pentru echipa masculină și feminină, cu profiluri pentru jucători și staff tehnic.
+*   **Sistem de Ticketing:** Pagină dedicată pentru rezervarea biletelor cu formulare integrate.
+*   **Centru de Știri:** Arhivă de articole cu design tip editorial pentru noutăți și transferuri.
+*   **Integrare Google Maps:** Localizare precisă pentru Sala Sporturilor "Horia Demian" în pagina de contact.
 
 ---
 
