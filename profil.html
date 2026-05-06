@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilul Meu | U Cluj Handbal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">U CLUJ</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Acasă</a></li>
+                    <li class="nav-item"><a class="nav-link" href="stiri.html">Știri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="meciuri.html">Meciuri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="clasament.html">Clasament</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lot.html">Lot Echipa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bilete.html"><i class="fa-solid fa-ticket me-1"></i> Bilete</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold text-white" href="autentificare.html"><i class="fa-regular fa-user me-1"></i> Contul Meu</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="#" onclick="logoutUser()">Deconectare</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" style="margin-top: 120px;">
+        <div class="row">
+            <div class="col-lg-3 mb-4">
+                <div class="bg-white p-4 shadow-sm">
+                    <div class="text-center mb-4">
+                        <i class="fa-solid fa-user-circle fa-4x text-dark"></i>
+                        <h5 class="fw-bold mt-2" id="salutNume">Salut!</h5>
+                    </div>
+                    <div class="nav flex-column nav-pills profile-nav">
+                        <button class="nav-link active text-start" data-bs-toggle="pill" data-bs-target="#date-personale">Date Personale</button>
+                        <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#securitate">Securitate</button>
+                        <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#bilete">Biletele Mele</button>
+                        <button class="nav-link text-start" data-bs-toggle="pill" data-bs-target="#conturi">Conturi Asociate</button>
+                        <button class="nav-link text-start text-danger" data-bs-toggle="pill" data-bs-target="#sterge-cont">Șterge Cont</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="tab-content bg-white p-5 shadow-sm">
+                    <div class="tab-pane fade show active" id="date-personale">
+                        <h4 class="fw-bold mb-4">Setări Profil</h4>
+                        <form id="profileForm">
+                            <div class="row g-3">
+                                <div class="col-md-6"><label class="small fw-bold">NUME</label><input type="text" id="profilNume" class="form-control"></div>
+                                <div class="col-md-6"><label class="small fw-bold">PRENUME</label><input type="text" id="profilPrenume" class="form-control"></div>
+                                <div class="col-md-6"><label class="small fw-bold">EMAIL</label><input type="email" id="profilEmail" class="form-control"></div>
+                                <div class="col-md-6"><label class="small fw-bold">TELEFON</label><input type="text" id="profilTel" class="form-control" placeholder="07xx xxx xxx"></div>
+                                <div class="col-md-6"><label class="small fw-bold">DATA NAȘTERII</label><input type="date" id="profilData" class="form-control"></div>
+                                <div class="col-md-6">
+                                    <label class="small fw-bold">SEX</label>
+                                    <select class="form-select" id="profilSex">
+                                        <option value="Masculin">Masculin</option>
+                                        <option value="Feminin">Feminin</option>
+                                    </select>
+                                </div>
+                                <div class="col-12"><button type="submit" class="btn btn-dark px-4 mt-3">Salvează Modificările</button></div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="tab-pane fade" id="securitate">
+                    <h4 class="fw-bold mb-4">Securitate Cont</h4>
+                    <form id="changePasswordForm">
+                        <div class="mb-3">
+                            <label class="small fw-bold">PAROLA CURENTĂ</label>
+                            <input type="password" id="currentPass" class="form-control" placeholder="Introduceți parola actuală" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="small fw-bold">PAROLA NOUĂ</label>
+                            <input type="password" id="newPass" class="form-control" placeholder="Introduceți parola nouă" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="small fw-bold">CONFIRMĂ PAROLA NOUĂ</label>
+                            <input type="password" id="confirmPass" class="form-control" placeholder="Repetați parola nouă" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark px-4 rounded-0 fw-bold">Actualizează Parola</button>
+                    </form>
+                </div>
+
+                    <div class="tab-pane fade" id="bilete">
+                        <h4 class="fw-bold mb-4">Biletele Mele</h4>
+                        <div id="bilete-container"><p class="text-muted">Nu ai bilete achiziționate.</p></div>
+                    </div>
+
+                    <div class="tab-pane fade" id="conturi">
+                        <h4 class="fw-bold mb-4">Conturi Asociate</h4>
+                        <p class="small text-muted">Conturi conectate pentru autentificare rapidă.</p>
+                        <div class="border p-3 d-flex justify-content-between align-items-center mb-3">
+                            <span><i class="fa-brands fa-google me-2"></i> Google</span>
+                            <button class="btn btn-outline-dark btn-sm">Conectează</button>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="sterge-cont">
+                        <h4 class="fw-bold text-danger">Ștergere Cont</h4>
+                        <p>Atenție! Această acțiune este definitivă.</p>
+                        <button class="btn btn-danger" onclick="deleteAccount()">Șterge definitiv contul</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
