@@ -28,14 +28,23 @@ Proiectul este organizat profesional pentru a respecta standardele de dezvoltare
 /u-cluj-handbal-site
 │
 ├── /css
-│   └── style.css          # Fișier centralizat pentru toate stilurile site-ului
+│   └── style.css            # Fișier centralizat pentru toate stilurile site-ului
+├── /imagini                 # Resurse media (jucători, meciuri, bannere, logo-uri)
 ├── /js
-│   └── main.js           # Logică JavaScript pentru formulare și interacțiuni
-├── /imagini              # Resurse media optimizate (jucători, meciuri, bannere)
-├── index.html            # Pagina principală (Landing Page)
-├── stiri.html            # Arhiva de noutăți
-├── meciuri.html          # Programul și rezultatele competiționale
-├── lot.html              # Prezentarea echipelor (Masculin/Feminin)
-├── clasament.html        # Pozițiile în Liga Națională
-├── bilete.html           # Platforma de achiziție tichete
-└── contact.html          # Formular de suport și localizare hartă
+│   └── main.js             # Logică JavaScript pentru formulare, animații și interacțiuni
+│
+├── autentificare.html       # Pagina de login și înregistrare (cu opțiuni Google/Facebook)
+├── bilete.html              # Platforma de achiziție tichete și abonamente
+├── clasament.html           # Pozițiile detaliate în Liga Națională
+├── contact.html             # Formular de suport, date de contact și localizare hartă
+├── index.html               # Pagina principală a site-ului (Landing Page)
+├── lot.html                 # Prezentarea lotului de jucători și a staff-ului tehnic
+├── meciuri.html             # Programul competițional, rezultate și statistici
+├── profil.html              # Pagina personală a utilizatorului după autentificare
+├── README.md                # Documentația proiectului și detalii tehnice
+├── resetare-parola.html     # Pagina pentru recuperarea și resetarea parolei
+├── stire.html               # Șablonul de bază pentru vizualizarea unei știri individuale
+├── stire-juniori.html       # Articol dedicat performanțelor echipelor de juniori
+├── stire-transfer.html      # Anunț oficial privind noile transferuri ale clubului
+├── stire-victorie.html      # Cronică de meci dedicată unui rezultat pozitiv
+└── stiri.html               # Arhiva generală cu toate noutățile și articolele publicate
