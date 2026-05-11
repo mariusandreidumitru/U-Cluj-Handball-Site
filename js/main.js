@@ -197,6 +197,45 @@ document.addEventListener("DOMContentLoaded", function() {
         incarcaBileteProfil();
     }
 
+    // --- FORMULAR PRE-ÎNSCRIERE JUNIORI ---
+    const juniorForm = document.getElementById('junior-form');
+    if (juniorForm) {
+        const phoneInput = document.getElementById('phoneInput');
+        
+        if (phoneInput) {
+            phoneInput.addEventListener('input', function(e) {
+                // Acceptă doar cifre
+                let value = e.target.value.replace(/\D/g, '');
+                // Limitează la 10 caractere
+                e.target.value = value.substring(0, 10);
+            });
+        }
+
+        juniorForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const phoneValue = document.getElementById('phoneInput').value.trim();
+            
+            // Validează că telefonul are exact 10 cifre
+            if (phoneValue.length !== 10 || !/^\d{10}$/.test(phoneValue)) {
+                showCustomAlert('Eroare: Introduceți un număr de telefon valid (10 cifre)!', true);
+                return;
+            }
+            
+            // Validează că toate câmpurile required sunt completate
+            if (!juniorForm.checkValidity()) {
+                showCustomAlert('Eroare: Completați toate câmpurile obligatorii!', true);
+                return;
+            }
+            
+            // Ascunde formularul și afișează mesajul de succes
+            document.getElementById('form-container').style.display = 'none';
+            document.getElementById('success-message').style.display = 'block';
+            
+            showCustomAlert('Înscrierea a fost trimisă cu succes!');
+        });
+    }
+
     // --- AUTO-FORMATARE CÂMPURI CARD (DATE LIVE) ---
     const cardNumber = document.getElementById('cardNumberInput');
     const cardExp = document.getElementById('cardExpInput');
